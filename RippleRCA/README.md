@@ -1,6 +1,6 @@
 # RippleRCA
 
-RippleRCA is a standalone root cause analysis codebase extracted from the public-safe parts of the original LADS-Causal workspace.
+RippleRCA is a standalone root cause analysis codebase.
 
 It combines:
 
