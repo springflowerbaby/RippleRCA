@@ -1,0 +1,12 @@
+numpy==1.24.3
+pandas==1.5.3
+scipy==1.10.1
+scikit-learn==1.2.2
+torch==1.13.1
+dgl==1.1.0
+tigramite==5.2.9.4
+networkx>=2.8,<4
+tqdm>=4.64
+joblib>=1.2
+pyarrow>=12
+matplotlib>=3.6
