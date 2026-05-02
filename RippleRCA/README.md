@@ -1,24 +1,14 @@
-# RippleRCA
+RippleRCA
+RippleRCA is a standalone framework for root cause analysis in microservice systems.
 
-RippleRCA is a standalone root cause analysis codebase.
+The framework combines:
 
-It combines:
-
-- lag-aware causal discovery
-- dual-stage service and pod ranking
-- RCAbench preprocessing and evaluation
-- AIOps-style dataset loading
-
-## Highlights
-
-- Independent repository layout with no runtime dependency on sibling `causelens/RCA`
-- Minimal public release focused on the main pipeline
-- Relative-path defaults suitable for public release
-- Ready to publish with a minimal `.gitignore` and `requirements.txt`
-
-## Repository Layout
-
-```text
+topology-constrained lag prior construction
+lag-aware node representation learning
+dual-channel candidate recall for coarse-grained diagnosis
+lag-calibrated counterfactual inference for fine-grained ranking
+preprocessing and evaluation pipelines for RCAbench and AIOps 2025 datasets
+Repository Layout
 RippleRCA/
   README.md
   requirements.txt
@@ -38,29 +28,20 @@ RippleRCA/
   utils.py
   log.py
   mask.py
-```
+Datasets
+RippleRCA uses publicly available datasets.
 
-## Install
-
-```bash
+RCAbench: [(https://zenodo.org/records/17105974)]
+AIOps 2025: [(https://www.aiops.cn/gitlab/aiops-live-benchmark/aiopschallenge2025)]
+Install
 pip install -r requirements.txt
-```
-
-## Data Preparation
-
-### RCAbench
-
-```bash
+Data Preparation
+RCAbench
 python preprocess_rcabench.py \
   --rcabench_root RCAbench \
   --output_root RCAbench/rcabench_preprocessed
-```
-
-## Run
-
-### RCAbench example
-
-```bash
+Run
+RCAbench example
 python main.py \
   --dataset_type rcabench \
   --data_dir RCAbench/rcabench_preprocessed \
@@ -69,23 +50,15 @@ python main.py \
   --top_k_services 8 \
   --top_k_pods 10 \
   --seed 42
-```
-
-### AIOps-style example
-
-```bash
+AIOps 2025 example
 python main.py \
   --dataset_type aiops2025 \
   --data_dir output \
   --test_dates 20250606 \
   --output_dir outputs/aiops2025_run
-```
-
-## Outputs
-
+Outputs
 Each run usually writes:
 
-- `rca_results.json`
-- `evaluation_results.json`
-- `rerank_debug.json`
-
+rca_results.json
+evaluation_results.json
+rerank_debug.json
