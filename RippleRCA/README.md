@@ -89,9 +89,3 @@ Each run usually writes:
 - `evaluation_results.json`
 - `rerank_debug.json`
 
-## Notes
-
-- This folder is designed to be published as its own repository root.
-- Raw datasets, caches, logs, trained models, and experiment outputs are intentionally excluded.
-- Some source files still contain legacy comments from the original research workspace, but the runtime dependency on `causelens/RCA` has been removed.
-- This minimal release keeps the main RCA path only and omits auxiliary experiment scripts such as reranker training, fixed-split runners, and sensitivity analysis tools.
