@@ -7,7 +7,7 @@ The framework combines:
 - lag-aware node representation learning
 - dual-channel candidate recall for coarse-grained diagnosis
 - lag-calibrated counterfactual inference for fine-grained ranking
-- preprocessing and evaluation pipelines for RCAbench and AIOps-style datasets
+- preprocessing and evaluation pipelines for RCAbench and AIOps 2025 datasets
 
 ## Repository Layout
 
@@ -70,7 +70,7 @@ python main.py \
   --seed 42
 ```
 
-### AIOps-style example
+### AIOps 2025 example
 
 ```bash
 python main.py \
