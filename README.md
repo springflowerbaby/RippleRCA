@@ -1,20 +1,13 @@
 # RippleRCA
 
-RippleRCA is a standalone root cause analysis codebase extracted from the public-safe parts of the original LADS-Causal workspace.
+RippleRCA is a standalone framework for root cause analysis in microservice systems.
 
-It combines:
-
-- lag-aware causal discovery
-- dual-stage service and pod ranking
-- RCAbench preprocessing and evaluation
-- AIOps-style dataset loading
-
-## Highlights
-
-- Independent repository layout with no runtime dependency on sibling `causelens/RCA`
-- Minimal public release focused on the main pipeline
-- Relative-path defaults suitable for public release
-- Ready to publish with a minimal `.gitignore` and `requirements.txt`
+The framework combines:
+- topology-constrained lag prior construction
+- lag-aware node representation learning
+- dual-channel candidate recall for coarse-grained diagnosis
+- lag-calibrated counterfactual inference for fine-grained ranking
+- preprocessing and evaluation pipelines for RCAbench and AIOps-style datasets
 
 ## Repository Layout
 
@@ -39,6 +32,12 @@ RippleRCA/
   log.py
   mask.py
 ```
+## Datasets
+
+RippleRCA uses publicly available datasets.
+
+- RCAbench: [(https://zenodo.org/records/17105974)]
+- AIOps 2025: [(https://www.aiops.cn/gitlab/aiops-live-benchmark/aiopschallenge2025)]
 
 ## Install
 
