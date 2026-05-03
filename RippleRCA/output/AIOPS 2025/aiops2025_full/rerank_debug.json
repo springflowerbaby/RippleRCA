@@ -1,0 +1,3830 @@
+{
+  "summary": {
+    "n_samples": 83,
+    "shared_top_candidate_pool": [
+      [
+        3,
+        0.7083202398839823
+      ],
+      [
+        1,
+        0.6641215472299702
+      ],
+      [
+        0,
+        0.3959287808961247
+      ],
+      [
+        7,
+        0.36152053608107476
+      ],
+      [
+        2,
+        0.2802165000468429
+      ]
+    ],
+    "shared_top_ranking": [
+      [
+        3,
+        0.7628562450408936
+      ],
+      [
+        1,
+        0.6176022291183472
+      ],
+      [
+        2,
+        0.2726764678955078
+      ],
+      [
+        7,
+        0.25925925374031067
+      ],
+      [
+        0,
+        0.16832827031612396
+      ]
+    ],
+    "stage2_transform": {
+      "transform": "log1p_clip",
+      "clip_percentile": 95.0,
+      "clip_threshold": 1.0305775091969176,
+      "raw_max": 1.0305775091969176,
+      "raw_p95": 1.0130186330163213,
+      "transformed_max": 0.7083202398839823,
+      "candidate_count": 5.0
+    },
+    "shared_top_breakdown": [
+      {
+        "pod_id": 3,
+        "shared_stage1_score": 0.2916889584830861,
+        "shared_stage2_score": 0.7083202398839823,
+        "shared_source_score": 1.0,
+        "vote_count": 83,
+        "source_diagnostics": {
+          "self_advantage": 3.2528758347034454,
+          "delta_advantage": 0.03176724910736084,
+          "downstream_margin": 0.033761024475097656,
+          "self_raw": 6.169161319732666,
+          "delta_raw": 1.0288596153259277,
+          "downstream_raw": 6.135400295257568
+        }
+      },
+      {
+        "pod_id": 1,
+        "shared_stage1_score": 0.23938019312021402,
+        "shared_stage2_score": 0.6641215472299702,
+        "shared_source_score": 0.7167739868164062,
+        "vote_count": 83,
+        "source_diagnostics": {
+          "self_advantage": 2.3668033182621,
+          "delta_advantage": 0.0,
+          "downstream_margin": 0.0,
+          "self_raw": 5.46030330657959,
+          "delta_raw": 0.9027266502380371,
+          "downstream_raw": 5.500666618347168
+        }
+      },
+      {
+        "pod_id": 2,
+        "shared_stage1_score": 0.5241010480795998,
+        "shared_stage2_score": 0.3959287808961247,
+        "shared_source_score": 0.08547595143318176,
+        "vote_count": 83,
+        "source_diagnostics": {
+          "self_advantage": 0.0,
+          "delta_advantage": 0.2652367055416107,
+          "downstream_margin": 0.11108791828155518,
+          "self_raw": 1.574092984199524,
+          "delta_raw": 1.2156351804733276,
+          "downstream_raw": 1.4630050659179688
+        }
+      },
+      {
+        "pod_id": 7,
+        "shared_stage1_score": 0.41633831072284516,
+        "shared_stage2_score": 0.36152053608107476,
+        "shared_source_score": 0.007989300414919853,
+        "vote_count": 83,
+        "source_diagnostics": {
+          "self_advantage": 0.0,
+          "delta_advantage": 0.0,
+          "downstream_margin": 0.0,
+          "self_raw": 2.1751132011413574,
+          "delta_raw": 0.8550541400909424,
+          "downstream_raw": 2.3414130210876465
+        }
+      },
+      {
+        "pod_id": 0,
+        "shared_stage1_score": 0.8525949242603348,
+        "shared_stage2_score": 0.2802165000468429,
+        "shared_source_score": 0.0,
+        "vote_count": 83,
+        "source_diagnostics": {
+          "self_advantage": 0.0,
+          "delta_advantage": 0.014384597539901733,
+          "downstream_margin": 0.02078986167907715,
+          "self_raw": 2.455632448196411,
+          "delta_raw": 1.0149534940719604,
+          "downstream_raw": 2.434842586517334
+        }
+      }
+    ]
+  },
+  "samples": [
+    {
+      "sample_idx": 0,
+      "timestamp": 1749262226,
+      "failure_type": "pod failure",
+      "cmdb_id": "recommendationservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 5
+        }
+      ],
+      "groundtruth_pod_ids": [
+        5
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "5": 5
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.6584674119949341
+        ],
+        [
+          3,
+          0.6584665775299072
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.33503204584121704
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 1,
+      "timestamp": 1749265828,
+      "failure_type": "network corrupt",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 5
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7454432845115662
+        ],
+        [
+          1,
+          0.6620630621910095
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.37950384616851807
+        ],
+        [
+          0,
+          0.3727782964706421
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 2,
+      "timestamp": 1749265828,
+      "failure_type": "network corrupt",
+      "cmdb_id": "redis-cart",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 6
+        }
+      ],
+      "groundtruth_pod_ids": [
+        6
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7130473256111145
+        ],
+        [
+          1,
+          0.5979295372962952
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3328099846839905
+        ],
+        [
+          0,
+          0.27067285776138306
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 3,
+      "timestamp": 1749265828,
+      "failure_type": "network corrupt",
+      "cmdb_id": "redis-cart-0",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 6
+        }
+      ],
+      "groundtruth_pod_ids": [
+        6
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7132983803749084
+        ],
+        [
+          1,
+          0.5979295372962952
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3328099846839905
+        ],
+        [
+          0,
+          0.27067285776138306
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 4,
+      "timestamp": 1749273031,
+      "failure_type": "network corrupt",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7017945051193237
+        ],
+        [
+          1,
+          0.5663639307022095
+        ],
+        [
+          0,
+          0.48266711831092834
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          7,
+          0.36898142099380493
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 5,
+      "timestamp": 1749273031,
+      "failure_type": "network corrupt",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7116121053695679
+        ],
+        [
+          1,
+          0.5607621669769287
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3359951376914978
+        ],
+        [
+          0,
+          0.30572497844696045
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 6,
+      "timestamp": 1749276633,
+      "failure_type": "network corrupt",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7703128457069397
+        ],
+        [
+          1,
+          0.5707616806030273
+        ],
+        [
+          7,
+          0.4860258102416992
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.38645562529563904
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 7,
+      "timestamp": 1749280235,
+      "failure_type": "network loss",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7192936539649963
+        ],
+        [
+          1,
+          0.7107858061790466
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.31678837537765503
+        ],
+        [
+          7,
+          0.28760647773742676
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 8,
+      "timestamp": 1749280235,
+      "failure_type": "network loss",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 5
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7062737345695496
+        ],
+        [
+          1,
+          0.6341502666473389
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.33397185802459717
+        ],
+        [
+          0,
+          0.2876870632171631
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 9,
+      "timestamp": 1749283837,
+      "failure_type": "network delay",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7213296890258789
+        ],
+        [
+          5,
+          0.6528776288032532
+        ],
+        [
+          1,
+          0.5961869359016418
+        ],
+        [
+          2,
+          0.2876611351966858
+        ],
+        [
+          4,
+          0.2572186291217804
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 10,
+      "timestamp": 1749283837,
+      "failure_type": "network delay",
+      "cmdb_id": "recommendationservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 5
+        }
+      ],
+      "groundtruth_pod_ids": [
+        5
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "5": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7314114570617676
+        ],
+        [
+          5,
+          0.5945773124694824
+        ],
+        [
+          1,
+          0.5607473254203796
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3196113109588623
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 11,
+      "timestamp": 1749294641,
+      "failure_type": "cpu stress",
+      "cmdb_id": "emailservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 2
+        }
+      ],
+      "groundtruth_pod_ids": [
+        2
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "2": 4
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8300890922546387
+        ],
+        [
+          1,
+          0.677162766456604
+        ],
+        [
+          5,
+          0.6526352167129517
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.37178635597229004
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 12,
+      "timestamp": 1749301861,
+      "failure_type": "network delay",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7038344740867615
+        ],
+        [
+          1,
+          0.569717288017273
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3326677680015564
+        ],
+        [
+          4,
+          0.2572186291217804
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 13,
+      "timestamp": 1749301861,
+      "failure_type": "network delay",
+      "cmdb_id": "emailservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 2
+        }
+      ],
+      "groundtruth_pod_ids": [
+        2
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "2": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7258872389793396
+        ],
+        [
+          1,
+          0.5607473254203796
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.37287312746047974
+        ],
+        [
+          4,
+          0.28222736716270447
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 14,
+      "timestamp": 1749305463,
+      "failure_type": "network loss",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7645084857940674
+        ],
+        [
+          1,
+          0.6044099926948547
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3200927674770355
+        ],
+        [
+          4,
+          0.2572186291217804
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 15,
+      "timestamp": 1749305463,
+      "failure_type": "network loss",
+      "cmdb_id": "shippingservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 7
+        }
+      ],
+      "groundtruth_pod_ids": [
+        7
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8368602991104126
+        ],
+        [
+          1,
+          0.689063310623169
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.30814021825790405
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 16,
+      "timestamp": 1749309065,
+      "failure_type": "cpu stress",
+      "cmdb_id": "recommendationservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 5
+        }
+      ],
+      "groundtruth_pod_ids": [
+        5
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "5": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.9005380868911743
+        ],
+        [
+          1,
+          0.6092722415924072
+        ],
+        [
+          5,
+          0.5679816007614136
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.2944040298461914
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 17,
+      "timestamp": 1749316204,
+      "failure_type": "network loss",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.712788999080658
+        ],
+        [
+          1,
+          0.6442381143569946
+        ],
+        [
+          5,
+          0.48009583353996277
+        ],
+        [
+          7,
+          0.44073671102523804
+        ],
+        [
+          2,
+          0.3891552984714508
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 18,
+      "timestamp": 1749319806,
+      "failure_type": "network loss",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8332570195198059
+        ],
+        [
+          1,
+          0.6320751309394836
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.30784016847610474
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 19,
+      "timestamp": 1749319806,
+      "failure_type": "network loss",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.836742103099823
+        ],
+        [
+          1,
+          0.5984420776367188
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3041059076786041
+        ],
+        [
+          0,
+          0.2978246510028839
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 20,
+      "timestamp": 1749337813,
+      "failure_type": "network delay",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7599709630012512
+        ],
+        [
+          1,
+          0.5841702818870544
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3751950263977051
+        ],
+        [
+          0,
+          0.2959817945957184
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 21,
+      "timestamp": 1749337813,
+      "failure_type": "network delay",
+      "cmdb_id": "emailservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 2
+        }
+      ],
+      "groundtruth_pod_ids": [
+        2
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "2": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7352401614189148
+        ],
+        [
+          1,
+          0.5785200595855713
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3078610301017761
+        ],
+        [
+          0,
+          0.2978246510028839
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 22,
+      "timestamp": 1749600620,
+      "failure_type": "pod failure",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7012544274330139
+        ],
+        [
+          1,
+          0.6089476943016052
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.2752772867679596
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 23,
+      "timestamp": 1749607829,
+      "failure_type": "network corrupt",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8984251618385315
+        ],
+        [
+          1,
+          0.5912835001945496
+        ],
+        [
+          0,
+          0.45313286781311035
+        ],
+        [
+          5,
+          0.41373878717422485
+        ],
+        [
+          2,
+          0.3891552984714508
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 24,
+      "timestamp": 1749625839,
+      "failure_type": "network corrupt",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.6657407283782959
+        ],
+        [
+          1,
+          0.5607473254203796
+        ],
+        [
+          7,
+          0.48693543672561646
+        ],
+        [
+          5,
+          0.32596904039382935
+        ],
+        [
+          4,
+          0.258475661277771
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 25,
+      "timestamp": 1749625839,
+      "failure_type": "network corrupt",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.6561285853385925
+        ],
+        [
+          1,
+          0.5625467896461487
+        ],
+        [
+          7,
+          0.48693543672561646
+        ],
+        [
+          5,
+          0.3124857544898987
+        ],
+        [
+          4,
+          0.2572186291217804
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 26,
+      "timestamp": 1749651053,
+      "failure_type": "network delay",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.8125866651535034
+        ],
+        [
+          3,
+          0.6510118842124939
+        ],
+        [
+          7,
+          0.48693543672561646
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.26751261949539185
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 27,
+      "timestamp": 1749658202,
+      "failure_type": "network corrupt",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7586635947227478
+        ],
+        [
+          1,
+          0.7096405625343323
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.2905120253562927
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 28,
+      "timestamp": 1749658202,
+      "failure_type": "network corrupt",
+      "cmdb_id": "recommendationservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 5
+        }
+      ],
+      "groundtruth_pod_ids": [
+        5
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "5": 4
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.6919386386871338
+        ],
+        [
+          3,
+          0.6499999761581421
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.3032858967781067
+        ],
+        [
+          4,
+          0.27789968252182007
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 29,
+      "timestamp": 1749661804,
+      "failure_type": "network delay",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.7220627665519714
+        ],
+        [
+          3,
+          0.6499999761581421
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          7,
+          0.4043806195259094
+        ],
+        [
+          2,
+          0.35013696551322937
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 30,
+      "timestamp": 1749661804,
+      "failure_type": "network delay",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7786135673522949
+        ],
+        [
+          1,
+          0.691004753112793
+        ],
+        [
+          7,
+          0.4407874345779419
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.3840085566043854
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 31,
+      "timestamp": 1749669008,
+      "failure_type": "network corrupt",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7201974391937256
+        ],
+        [
+          1,
+          0.6815125942230225
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.37242865562438965
+        ],
+        [
+          7,
+          0.3253181278705597
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 32,
+      "timestamp": 1749669008,
+      "failure_type": "network corrupt",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7201974391937256
+        ],
+        [
+          1,
+          0.6240881085395813
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3761287033557892
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 33,
+      "timestamp": 1749679813,
+      "failure_type": "network loss",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 4
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8461085557937622
+        ],
+        [
+          1,
+          0.6261869072914124
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3761287033557892
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 34,
+      "timestamp": 1749679813,
+      "failure_type": "network loss",
+      "cmdb_id": "redis-cart",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 6
+        }
+      ],
+      "groundtruth_pod_ids": [
+        6
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7516789436340332
+        ],
+        [
+          1,
+          0.5975807905197144
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3118496239185333
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 35,
+      "timestamp": 1749679813,
+      "failure_type": "network loss",
+      "cmdb_id": "redis-cart-0",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 6
+        }
+      ],
+      "groundtruth_pod_ids": [
+        6
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7516789436340332
+        ],
+        [
+          1,
+          0.5975807905197144
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3118496239185333
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 36,
+      "timestamp": 1749722572,
+      "failure_type": "network loss",
+      "cmdb_id": "recommendationservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 5
+        }
+      ],
+      "groundtruth_pod_ids": [
+        5
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8232222199440002
+        ],
+        [
+          1,
+          0.7946432828903198
+        ],
+        [
+          4,
+          0.39339691400527954
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          7,
+          0.3217706084251404
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 37,
+      "timestamp": 1749722572,
+      "failure_type": "network loss",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "4": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8390659093856812
+        ],
+        [
+          1,
+          0.8301105499267578
+        ],
+        [
+          4,
+          0.408847451210022
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.33993974328041077
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 38,
+      "timestamp": 1749744602,
+      "failure_type": "pod failure",
+      "cmdb_id": "emailservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 2
+        }
+      ],
+      "groundtruth_pod_ids": [
+        2
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8672979474067688
+        ],
+        [
+          1,
+          0.68601393699646
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          4,
+          0.4333845376968384
+        ],
+        [
+          5,
+          0.3126696050167084
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 39,
+      "timestamp": 1749759009,
+      "failure_type": "network loss",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8099640011787415
+        ],
+        [
+          1,
+          0.6188595294952393
+        ],
+        [
+          0,
+          0.4776694178581238
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          4,
+          0.329492449760437
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 40,
+      "timestamp": 1749759009,
+      "failure_type": "network loss",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 4
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7422175407409668
+        ],
+        [
+          1,
+          0.6448957324028015
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3532269597053528
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 41,
+      "timestamp": 1749762611,
+      "failure_type": "network delay",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7458876371383667
+        ],
+        [
+          1,
+          0.6527815461158752
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3601232171058655
+        ],
+        [
+          4,
+          0.3053201138973236
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 42,
+      "timestamp": 1750119015,
+      "failure_type": "target port misconfig",
+      "cmdb_id": "emailservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 2
+        }
+      ],
+      "groundtruth_pod_ids": [
+        2
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.6802101731300354
+        ],
+        [
+          1,
+          0.5842913389205933
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.2764255106449127
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 43,
+      "timestamp": 1750129820,
+      "failure_type": "code error",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7156580686569214
+        ],
+        [
+          1,
+          0.5859996676445007
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          4,
+          0.3217734098434448
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 44,
+      "timestamp": 1750137021,
+      "failure_type": "network delay",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.9107472896575928
+        ],
+        [
+          3,
+          0.6628789901733398
+        ],
+        [
+          5,
+          0.350227952003479
+        ],
+        [
+          4,
+          0.2995295524597168
+        ],
+        [
+          0,
+          0.2878933250904083
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 45,
+      "timestamp": 1750137021,
+      "failure_type": "network delay",
+      "cmdb_id": "recommendationservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 5
+        }
+      ],
+      "groundtruth_pod_ids": [
+        5
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "5": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.9107472896575928
+        ],
+        [
+          3,
+          0.6892576217651367
+        ],
+        [
+          5,
+          0.3540162444114685
+        ],
+        [
+          0,
+          0.3385615348815918
+        ],
+        [
+          4,
+          0.3066225051879883
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 46,
+      "timestamp": 1750144239,
+      "failure_type": "code error",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.9107472896575928
+        ],
+        [
+          3,
+          0.6499999761581421
+        ],
+        [
+          0,
+          0.5184117555618286
+        ],
+        [
+          5,
+          0.310177206993103
+        ],
+        [
+          4,
+          0.265319287776947
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 47,
+      "timestamp": 1750158644,
+      "failure_type": "network delay",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7925534248352051
+        ],
+        [
+          1,
+          0.6002109050750732
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          2,
+          0.37986481189727783
+        ],
+        [
+          4,
+          0.3594514727592468
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 48,
+      "timestamp": 1750158644,
+      "failure_type": "network delay",
+      "cmdb_id": "emailservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 2
+        }
+      ],
+      "groundtruth_pod_ids": [
+        2
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.9655930399894714
+        ],
+        [
+          1,
+          0.8565186858177185
+        ],
+        [
+          4,
+          0.5534027814865112
+        ],
+        [
+          5,
+          0.5201090574264526
+        ],
+        [
+          0,
+          0.5180274844169617
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 49,
+      "timestamp": 1750183804,
+      "failure_type": "network corrupt",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8348243832588196
+        ],
+        [
+          1,
+          0.7320201992988586
+        ],
+        [
+          5,
+          0.42406877875328064
+        ],
+        [
+          4,
+          0.40825706720352173
+        ],
+        [
+          0,
+          0.4080492854118347
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 50,
+      "timestamp": 1750187405,
+      "failure_type": "code error",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7250595092773438
+        ],
+        [
+          1,
+          0.7095195651054382
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3400777280330658
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 51,
+      "timestamp": 1750198208,
+      "failure_type": "code error",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7293955683708191
+        ],
+        [
+          1,
+          0.5877362489700317
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.36455491185188293
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 52,
+      "timestamp": 1750201808,
+      "failure_type": "code error",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 4
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.736644983291626
+        ],
+        [
+          1,
+          0.5864671468734741
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.310541033744812
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 53,
+      "timestamp": 1750205409,
+      "failure_type": "network delay",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.6724109649658203
+        ],
+        [
+          1,
+          0.5656794905662537
+        ],
+        [
+          0,
+          0.41909128427505493
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 54,
+      "timestamp": 1750205409,
+      "failure_type": "network delay",
+      "cmdb_id": "redis-cart",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 6
+        }
+      ],
+      "groundtruth_pod_ids": [
+        6
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.6775449514389038
+        ],
+        [
+          1,
+          0.5723444223403931
+        ],
+        [
+          0,
+          0.4278562366962433
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 55,
+      "timestamp": 1750205409,
+      "failure_type": "network delay",
+      "cmdb_id": "redis-cart-0",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 6
+        }
+      ],
+      "groundtruth_pod_ids": [
+        6
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.6775449514389038
+        ],
+        [
+          1,
+          0.5723444223403931
+        ],
+        [
+          0,
+          0.4278562366962433
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 56,
+      "timestamp": 1750209010,
+      "failure_type": "code error",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7907381057739258
+        ],
+        [
+          1,
+          0.5624982714653015
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.2598685026168823
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 57,
+      "timestamp": 1750212611,
+      "failure_type": "target port misconfig",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7909088134765625
+        ],
+        [
+          1,
+          0.5791576504707336
+        ],
+        [
+          0,
+          0.4402690529823303
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.31150728464126587
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 58,
+      "timestamp": 1750216211,
+      "failure_type": "network corrupt",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.806393027305603
+        ],
+        [
+          1,
+          0.6435844302177429
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          4,
+          0.3117985129356384
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 59,
+      "timestamp": 1750216211,
+      "failure_type": "network corrupt",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "4": 5
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7461788058280945
+        ],
+        [
+          1,
+          0.6224642992019653
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.34558454155921936
+        ],
+        [
+          4,
+          0.31979507207870483
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 60,
+      "timestamp": 1750219812,
+      "failure_type": "network delay",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7675740122795105
+        ],
+        [
+          1,
+          0.5767460465431213
+        ],
+        [
+          7,
+          0.48693543672561646
+        ],
+        [
+          2,
+          0.354814738035202
+        ],
+        [
+          4,
+          0.35028186440467834
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 61,
+      "timestamp": 1750219812,
+      "failure_type": "network delay",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8595709800720215
+        ],
+        [
+          1,
+          0.5911867022514343
+        ],
+        [
+          0,
+          0.3951338529586792
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          4,
+          0.3381444811820984
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 62,
+      "timestamp": 1750241420,
+      "failure_type": "dns error",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.9107472896575928
+        ],
+        [
+          3,
+          0.7920385599136353
+        ],
+        [
+          0,
+          0.32379022240638733
+        ],
+        [
+          4,
+          0.3208625018596649
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 63,
+      "timestamp": 1750259430,
+      "failure_type": "code error",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7234803438186646
+        ],
+        [
+          1,
+          0.6897448301315308
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.2939195930957794
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 64,
+      "timestamp": 1750263001,
+      "failure_type": "target port misconfig",
+      "cmdb_id": "emailservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 2
+        }
+      ],
+      "groundtruth_pod_ids": [
+        2
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "2": 5
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7941343188285828
+        ],
+        [
+          1,
+          0.6584266424179077
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          4,
+          0.34848982095718384
+        ],
+        [
+          2,
+          0.30950576066970825
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 65,
+      "timestamp": 1750281006,
+      "failure_type": "dns error",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.702720582485199
+        ],
+        [
+          1,
+          0.6247122883796692
+        ],
+        [
+          7,
+          0.43899381160736084
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.32960784435272217
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 66,
+      "timestamp": 1750295409,
+      "failure_type": "network delay",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8309144973754883
+        ],
+        [
+          1,
+          0.7383104562759399
+        ],
+        [
+          0,
+          0.4479163885116577
+        ],
+        [
+          7,
+          0.44756758213043213
+        ],
+        [
+          4,
+          0.40996354818344116
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 67,
+      "timestamp": 1750295409,
+      "failure_type": "network delay",
+      "cmdb_id": "cartservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 0
+        }
+      ],
+      "groundtruth_pod_ids": [
+        0
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "0": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8943135738372803
+        ],
+        [
+          1,
+          0.7395158410072327
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          7,
+          0.48148685693740845
+        ],
+        [
+          4,
+          0.41537415981292725
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 68,
+      "timestamp": 1750317021,
+      "failure_type": "network corrupt",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7696303129196167
+        ],
+        [
+          1,
+          0.6401593089103699
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          4,
+          0.36965352296829224
+        ],
+        [
+          0,
+          0.3592911958694458
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 69,
+      "timestamp": 1750317021,
+      "failure_type": "network corrupt",
+      "cmdb_id": "shippingservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 7
+        }
+      ],
+      "groundtruth_pod_ids": [
+        7
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7344663143157959
+        ],
+        [
+          1,
+          0.6248314380645752
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          4,
+          0.33970630168914795
+        ],
+        [
+          0,
+          0.3112172484397888
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 70,
+      "timestamp": 1750331425,
+      "failure_type": "network loss",
+      "cmdb_id": "frontend",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 3
+        }
+      ],
+      "groundtruth_pod_ids": [
+        3
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "3": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.8198155760765076
+        ],
+        [
+          1,
+          0.5607473254203796
+        ],
+        [
+          5,
+          0.4465770125389099
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          4,
+          0.3652207851409912
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 71,
+      "timestamp": 1750331425,
+      "failure_type": "network loss",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.781528115272522
+        ],
+        [
+          1,
+          0.5607473254203796
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          4,
+          0.35978230834007263
+        ],
+        [
+          0,
+          0.3417183756828308
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 72,
+      "timestamp": 1750342230,
+      "failure_type": "target port misconfig",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7034421563148499
+        ],
+        [
+          1,
+          0.5808334350585938
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.26273471117019653
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 73,
+      "timestamp": 1750349401,
+      "failure_type": "target port misconfig",
+      "cmdb_id": "emailservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 2
+        }
+      ],
+      "groundtruth_pod_ids": [
+        2
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "2": 3
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7854428291320801
+        ],
+        [
+          1,
+          0.6247135400772095
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          0,
+          0.3787670135498047
+        ],
+        [
+          7,
+          0.34231603145599365
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 74,
+      "timestamp": 1750356603,
+      "failure_type": "network corrupt",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.6836611032485962
+        ],
+        [
+          1,
+          0.5768085718154907
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.2590845823287964
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 75,
+      "timestamp": 1750356603,
+      "failure_type": "network corrupt",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7086393237113953
+        ],
+        [
+          1,
+          0.5873229503631592
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          0,
+          0.28912466764450073
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 76,
+      "timestamp": 1750374610,
+      "failure_type": "network loss",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7086393237113953
+        ],
+        [
+          1,
+          0.5873229503631592
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          0,
+          0.28912466764450073
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 77,
+      "timestamp": 1750374610,
+      "failure_type": "network loss",
+      "cmdb_id": "shippingservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 7
+        }
+      ],
+      "groundtruth_pod_ids": [
+        7
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7583995461463928
+        ],
+        [
+          1,
+          0.5900416374206543
+        ],
+        [
+          2,
+          0.3891552984714508
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          0,
+          0.28737589716911316
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 78,
+      "timestamp": 1750723811,
+      "failure_type": "code error",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": false,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {},
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7895066738128662
+        ],
+        [
+          1,
+          0.566653311252594
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          2,
+          0.3667345345020294
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 79,
+      "timestamp": 1750731012,
+      "failure_type": "dns error",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 2
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7555477023124695
+        ],
+        [
+          1,
+          0.6362348198890686
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.35126832127571106
+        ],
+        [
+          2,
+          0.286986768245697
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 80,
+      "timestamp": 1750738216,
+      "failure_type": "network delay",
+      "cmdb_id": "recommendationservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 5
+        }
+      ],
+      "groundtruth_pod_ids": [
+        5
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "5": 4
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7044228911399841
+        ],
+        [
+          1,
+          0.5939468145370483
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.27340567111968994
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 81,
+      "timestamp": 1750738216,
+      "failure_type": "network delay",
+      "cmdb_id": "productcatalogservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 4
+        }
+      ],
+      "groundtruth_pod_ids": [
+        4
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "4": 5
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          3,
+          0.7287744283676147
+        ],
+        [
+          1,
+          0.5873394012451172
+        ],
+        [
+          0,
+          0.542279839515686
+        ],
+        [
+          5,
+          0.30287763476371765
+        ],
+        [
+          4,
+          0.2838415205478668
+        ]
+      ],
+      "debug_candidates": []
+    },
+    {
+      "sample_idx": 82,
+      "timestamp": 1750767042,
+      "failure_type": "dns error",
+      "cmdb_id": "checkoutservice",
+      "groundtruth": [
+        {
+          "ntype": "pod",
+          "id": 1
+        }
+      ],
+      "groundtruth_pod_ids": [
+        1
+      ],
+      "groundtruth_in_debug_candidates": false,
+      "groundtruth_in_final_topk": true,
+      "groundtruth_debug_ranks": {},
+      "groundtruth_final_ranks": {
+        "1": 1
+      },
+      "debug_weights": {},
+      "final_ranking": [
+        [
+          1,
+          0.7868719100952148
+        ],
+        [
+          3,
+          0.7237486243247986
+        ],
+        [
+          7,
+          0.48693543672561646
+        ],
+        [
+          0,
+          0.4660351276397705
+        ],
+        [
+          5,
+          0.30287763476371765
+        ]
+      ],
+      "debug_candidates": []
+    }
+  ]
+}
